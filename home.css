@@ -1,0 +1,17 @@
+.head{
+    list-style: none;
+    display: flex;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.top{
+    display: grid;
+    grid-template-columns: 1fr , 1fr;
+}
