@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .head{
     list-style: none;
     display: flex;
@@ -5,22 +9,23 @@
 }
 nav{
     display: flex;
+    height: 60px;
     justify-content: space-between;
     border: 2px solid;
     align-items: center;
-    padding-left: 10px;
+    padding: 20px;
 }
-*{
-    margin: 0px;
-    padding: 0px;
-}
-.top{
-    display: grid;
-    grid-template-columns: 1fr , 1fr;
-}
-li{
+button{
+    font-size: medium;
     margin: 10px;
 }
-/* .logoname{
-    
-} */
+.leftbutt{
+    display: flex;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr , 1fr;
+    border: 2px solid blue;
+    height: 50vh;
+    width: 100vw;
+}
