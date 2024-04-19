@@ -1,36 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-    <link rel="stylesheet" href="home.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="logoname">SME STUDYHUB</div>
-            <div class="leftbutt">
-                    <button class="navbutt home">HOME</button>
-                    <button class="navbutt units">UNITS</button>
-                    <button class="navbutt downloads">DOWNLOADS</button>
-                    <button class="navbutt aboutus">ABOUT US</button>
-                    <button class="login" >LOGIN</button><button class="signup" >SIGN UP</button>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="intro"></div>
-        <div class="info"></div>
-        <div class="testimonials">
-            <div class="test1">fhd</div>
-            <div class="test2">dfs</div>
-        </div>
-    </main>
-        
-    <footer></footer>
-</body>
 
+   <header class="header">
+   
+      <section class="flex">
+   
+         <a href="home.html" class="logo">MECH-SYS-HUB</a>
+   
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="Search Units..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+   
+         <div class="profile">
+            <img src="images/pic-1.jpg" class="image" alt="">
+            <h2 class="name">BHUVANESH JAGTAP</h2>
+            <p class="role">STUDENT</p>
+            <a href="profile.html" class="btn">PROFILE</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">LOGIN</a>
+               <a href="register.html" class="option-btn">REGISTER</a>
+            </div>
+         </div>
+   
+      </section>
+   
+   </header>   
+   
+   <div class="side-bar">
+   
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+   
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h2 class="name">BHUVANESH JAGTAP</h2>
+         <p class="role">STUDENT</p>
+         <a href="profile.html" class="btn">VIEW PROFILE</a>
+      </div>
+   
+      <nav class="navbar">
+         <a href="home.html"><i class="fas fa-home"></i><span>HOME</span></a>
+         <a href="about.html"><i class="fas fa-question"></i><span>ABOUT US</span></a>
+         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>UNITS</span></a>
+         <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>TEACHERS</span></a>
+         <a href="contact.html"><i class="fas fa-headset"></i><span>CONTACT US</span></a>
+      </nav>
+   
+   </div>
+
+<section class="home-grid">
+
+   <h1 class="heading">quick options</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3 class="title">Likes and Comments</h3>
+         <p class="likes">Total Likes : <span>2578</span></p>
+         <a href="#" class="inline-btn">VIEW LIKES</a>
+         <p class="likes">Total Comments : <span>182</span></p>
+         <a href="#" class="inline-btn">VIEW COMMENTS</a>
+         <p class="likes">Saved Playlists : <span>4</span></p>
+         <a href="#" class="inline-btn">VIEW PLAYLISTS</a>
+      </div>
+
+      <div class="box">
+         <h3 class="title">TOP CATEGORIES</h3>
+         <div class="flex">
+            <a href="#"><i class="fas fa-atom"></i><span>POWER PLANTS</span></a>
+            <a href="#"><i class="fas fa-code"></i><span>THERMODYNAMICS</span></a>
+            <a href="#"><i class="fas fa-motorcycle"></i><span>AUTOMOBILE ENGINES</span></a>
+            <a href="#"><i class="fas fa-lightbulb"></i><span>DOMESTIC APPLIANCES</span></a>
+            <a href="#"><i class="fas fa-pen"></i><span>VEHICLE SPECIFICATIONS</span></a>
+            <a href="#"><i class="fas fa-truck-monster"></i><span>AUTOMOBILE SYSTEMS</span></a>
+            <a href="#"><i class="fas fa-cog"></i><span>MANUFACTURING PROCESSES</span></a>
+            <a href="#"><i class="fas fa-car"></i><span>ELECTRIC VEHICLES</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">POPULAR TOPICS</h3>
+         <div class="flex">
+            <a href="#"><i class="fas fa-truck-monster"></i><span>IC ENGINES</span></a>
+            <a href="#"><i class="fas fa-atom"></i><span>TURBINE</span></a>
+            <a href="#"><i class="fas fa-cog"></i><span>DIFFRENTIAL</span></a>
+            <a href="#"><i class="fas fa-car-crash"></i><span>ABS</span></a>
+            <a href="#"><i class="fas fa-code"></i><span>CASTING</span></a>
+            <a href="#"><i class="fas fa-snowflake"></i><span>SPLIT AC</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">BECOME A TUTOR</h3>
+         <p class="tutor">"Join our team and share your expertise with aspiring mechanical engineers worldwide!"</p>
+         <a href="teachers.html" class="inline-btn">GET STARTED</a>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+<section class="courses">
+
+   <h1 class="heading">TOP UNITS</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-2.jpg" alt="">
+            <div class="info">
+               <h3>Mr. S.D. HADE</h3>
+               <span>18-01-2024</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-1.png" alt="">
+            <span>6 Videos</span>
+         </div>
+         <h3 class="title">INTRODUCTION OF ENERGY SOURCES & ITS CONVERSION</h3>
+         <a href="playlist.html" class="inline-btn">VIEW PLAYLISTS</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-3.jpg" alt="">
+            <div class="info">
+               <h3>jMs. A.N. SAYYAD</h3>
+               <span>21-01-2024</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-2.png" alt="">
+            <span>8 Videos</span>
+         </div>
+         <h3 class="title">VEHICLE SYSTEMS</h3>
+         <a href="playlist.html" class="inline-btn">VIEW PLAYLISTS</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-4.jpg" alt="">
+            <div class="info">
+               <h3>Mr. K.L. BHOITE</h3>
+               <span>01-02-2024</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-3.png" alt="">
+            <span>10 Videos</span>
+         </div>
+         <h3 class="title">INTRODUCTIONS TO MANUFACTURING</h3>
+         <a href="playlist.html" class="inline-btn">VIEW PLAYLISTS</a>
+      </div>
+
+</section>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
 </html>
